@@ -13,6 +13,7 @@ def setup():
     background(255)
     stroke(0)
     turtle.setup(Turtle, this)
+    print(dir(turtle))
     if not TESTING:
         selectInput("Select a file to process:", "fileSelected")
     else:

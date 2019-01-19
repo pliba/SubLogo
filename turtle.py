@@ -12,4 +12,6 @@ def fd(distance):
 def rt(angle):
     t.right(angle)
 
+def lt(angle):
+    t.left(angle)
     
