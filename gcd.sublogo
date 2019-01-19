@@ -1,0 +1,10 @@
+(define mod (m n)
+    (- m (* n (/ m n))))
+
+(define gcd (m n)
+    (if (= n 0)
+        m
+        (gcd n (mod m n))))
+
+(print (gcd 133 57))
+(line 10 10 90 90)

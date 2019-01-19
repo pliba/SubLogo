@@ -1,0 +1,5 @@
+(repeat 4 
+  (begin
+	(fd 100)
+	(rt 90)
+))
