@@ -108,12 +108,13 @@ class WhileStatement(SpecialForm):
 
 
 class RepeatStatement(SpecialForm):
-    arity = 2
+    arity = -1
 
-    def apply(self, environment, times, block):
+    def apply(self, environment, times, *actions):
         n = evaluate(environment, times)
         for i in range(n):
-            evaluate(environment, block)
+            for action in actions:
+                evaluate(environment, action)
         return i
 
 
